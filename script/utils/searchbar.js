@@ -56,3 +56,11 @@ function emptySearch() {
     // render cards again.
     displayGallery(filteredRecipes);
 }
+
+searchBar.addEventListener('input', (e) => {
+    console.log(e.target.value)
+    if (e.target.value ==''){
+        //alert('bonjour');
+        window.location.reload()
+    }
+})
